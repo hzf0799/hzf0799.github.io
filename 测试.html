@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="%E6%B5%8B%E8%AF%95.css" type="text/css" rel="stylesheet">
+    <script src="%E6%B5%8B%E8%AF%95.js" defer="true"></script>
+    <script src="jquery-3.3.1.min.js" ></script>
+    <title></title>
+</head>
+
+<body onload="startTime()"  id="body1">
+    <div>
+    <button class="btn" onclick="qrkdj()">确认</button>
+    </div>
+    <div>
+    <img src=/121321.jpg alt="Planets" usemap="#planetmap"  class="img">
+        <map name="planetmap" >
+        <area shape="rect" coords="10,100,82,60" onmouseover="writeText('正方形')">
+        <area shape="circle" coords="0,0,60" onmouseover="writeText('圆形')"/>   
+        <area shape= "poly" coords="0,0,150,150,200,100,0,0" onmouseover="writeText('三角形')"/>   
+        </map>
+        
+        <p id="desc"></p>
+    </div>
+    <div id="txttime">
+    
+    </div>
+    <div id="dx"></div>
+    <!--弹窗!-->
+    <button id="myBtn" class="btn" >打开弹窗</button>
+    <div id=myModal class="modal">
+    <div class="modal-content">
+        <div class="model-header">
+            <span class="close" id="close">&times;</span>
+            <h2>头部</h2>
+        </div>
+        <div class="modal-body">
+        <p>文本内容</p>
+        </div>
+        <div class="modal-footer">
+        <button class="btn"> 确认</button>
+        </div>
+        </div>
+    </div>
+    <div>
+        <input type="text" id="txtSs"placeholder="搜索...">
+        <ul id="ulSs">
+            <li><span>a</span></li>
+            <li><span>bbasd</span></li>
+            <li><span>hhhhabs</span></li>
+        </ul>
+    </div>
+    <div class="s-c" id="lb1">
+        <div class="mySlides fade">
+            <div class="txtheader">1/3</div>
+            <img class="lbimg" src="1.jpg">
+            <div class="text">文本1</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="txtheader">2/3</div>
+            <img class="lbimg" src="2.jpg">
+            <div class="text">文本2</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="txtheader">3/3</div>
+            <img class="lbimg" src="3.jpg">
+            <div class="text">文本3</div>
+        </div>
+        <a class="prev" id="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" id="next">❯</a>
+<div class="dots">
+    <span class="dot"  id="dot1"></span> 
+    <span class="dot"  id="dot2"></span> 
+    <span class="dot"  id="dot3"></span> 
+        </div>
+</div>
+    <div>
+        <button class="btn" id="gdbtn">滚动条</button>
+        <br>
+        <br>
+        <br>
+        <p>滚动</p>
+      <br>
+        <br>
+        <br>
+        <p>滚动</p>        
+        <br>
+        <br>
+        <br>
+        <p>滚动</p>        
+        <br>
+        <br>
+        <br>
+        <p>滚动</p>
+    </div>
+    <div>
+        <div class="tab">
+        <button class="tablink" id="startbtn" >一</button>
+        <button class="tablink" id="erbtn" >二</button>
+        <button class="tablink" id="sanbtn" >三</button>
+        </div>
+        <div id="yi" class="tabcontent">
+            <h3>一</h3>
+            <p>hello world</p>
+        </div>       
+        <div id="er" class="tabcontent">
+            <h3>二</h3>
+            <p>hello world 2</p>
+        </div>        
+        <div id="san" class="tabcontent">
+            <h3>三</h3>
+            <p>hello world 3</p>
+        </div>
+    </div>
+    <div class="headermain" id="mySidenav">
+    <div  class="sidenav">
+        <a href="#" class="closebtn" id="closeNav">&times;</a>
+        <a href="#">a</a>
+        <a href="#">b</a>
+        <a href="#">o</a>
+        <a href="#">u</a>
+        <a href="#">t</a>
+    </div>
+    </div>
+    <div id="main">
+        <span id="openNav">&#9776;open</span>
+        </div>
+
+</body>
+</html>

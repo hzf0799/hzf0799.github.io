@@ -1,0 +1,307 @@
+*
+{
+    box-sizing: border-box;
+}
+.btn {
+	padding: 6px 12px;
+	text-align: center;
+	color:#333;
+	width:15%;
+    border: 1px solid #ccc;
+	background:none; 
+    border-radius: 4px;
+	border-color:#ccc;
+}
+.btn:active
+{
+   background-color: #ccc;
+}
+.img {
+    width: 30%;
+    
+}
+
+.modal {/* 暗布 */
+    
+    display: none;/* 默认隐藏 */
+    
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    margin:   auto;
+    position: relative;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    width: 80%;
+    height: 200px;
+    border-radius: 4px;
+    box-shadow: 4px 4px 4px  4px rgba(0,0,0,0.4),0 6px 20px 0 rgba(0,0,0,0.3);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+@keyframes animatetop {
+    from {top:-300px; }
+    to {top:0; }
+}
+.close {
+    margin: -2% 2%;
+    color: #999;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.close:hover,.close:focus{
+    color: #000;
+    cursor: pointer;/*鼠标样式*/
+}
+
+.model-header {
+    border-bottom: 1px solid #999;
+    
+}
+.model-header>h2
+{
+    margin-left: 2%;
+}
+
+.modal-body {
+   
+    padding: 6px;
+    border-bottom:1px solid #999; 
+}
+
+.modal-footer {
+    padding: 10px;
+   
+}
+
+#ulSs {            /*列表样式全部取消*/
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#ulSs>li
+{
+    display: none;
+    border:1px solid #999;
+    padding:6px 12px; 
+    font-size: 18px; 
+    background-color: #f6f6f6
+}
+#ulSs>li:hover
+{
+ background-color: #eee;
+    
+}
+
+#txtSs {
+    background-image: url(Ss.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 12px;
+    padding: 6px 30px;
+    border: 1px solid #999;
+    background-size: 20px;
+    background-position: 0.5% ;
+}   
+
+.lbimg {
+    width:100%;
+    height: 500px;
+}
+
+.s-c {
+    max-width: 1000px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev,.next {
+    cursor: pointer;/*鼠标样式*/
+    position: absolute;
+    padding: 230px 16px;
+    top: 0;/*或者50%设置内边距16px形成小框*/
+    width: auto; 
+    
+    color: white;
+    font-weight: bold;/*加粗*/
+    font-size: 30px;
+    transition: 1s ease;
+    border-radius: 0 4px 4px 0;
+    
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+@keyframes fade
+{
+    from{opacity: .1}
+    to  {opacity: 1 }
+}
+
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,.dot:hover {
+  background-color: #717171;
+}
+.ss
+{
+    background-color: #bbb;
+}
+
+.txtheader {
+    color: #f2f2f2;
+    font-size: 18px;
+    padding: 6px 12px;
+    position: absolute;
+    top:0;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 20px;
+  position: absolute;
+  width: 100%;
+    position:absolute;
+  bottom: 60px;
+  text-align: center;
+}
+
+.dots {
+    position: absolute;
+    bottom: 35px;
+    margin: 0 auto;
+   left: 46.5%;
+}
+.next
+{
+    right: 0;
+    border-radius: 4px 0 0 4px;
+}
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+.tab button:hover{
+    background-color: #ddd;
+    
+}
+.tab button:active{
+    background-color: #ccc;
+}
+
+.tablink {
+    display: block;
+    border: none;
+    padding: 20px ;
+    width: 100%;
+    font-size: 15px;
+    transform: 0.3s;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.tabcontent {
+    float:left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 300px;
+}
+.active2{
+     background-color: #ccc;
+}
+
+.sidenav {
+    height: 100%;
+    width: 30%;
+    position: fixed;
+    display: none
+    z-index: 2;
+    top: 0;
+    left:0;
+    background-color: #111;
+    overflow-x:hidden;
+    padding-top:50px; 
+    animation-name: huadong;
+    animation-duration: 0.5s;
+}
+.sidenav a{
+    padding: 8px 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+     display: block;
+    text-align: center;
+    transition: 0.3s;
+}
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+    
+}
+.closebtn {
+    position: absolute;
+    top:0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    padding: 16px;
+}
+
+
+#openNav {
+    font-size: 30px;
+}
+
+.headermain {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+  
+}
+@keyframes huadong
+{
+    from{width: 0%}
+    to{width: 30%}
+}
