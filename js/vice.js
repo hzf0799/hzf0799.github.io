@@ -1,4 +1,5 @@
-
+ //
+setTimeout(function browserRedirect() {
                 var sUserAgent = navigator.userAgent.toLowerCase();
                 var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
                 var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
@@ -15,6 +16,8 @@
                     //跳转pc端页面
                     window.location.href="https://hzf0799.github.io/index.html";
                 }
+            },0);
+          
 
         
 
